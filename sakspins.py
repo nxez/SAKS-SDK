@@ -1,15 +1,42 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# Copyright (c) 2015 NXEZ.COM.
+# http://www.nxez.com
+#
+# Licensed under the GNU General Public License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.gnu.org/licenses/gpl-2.0.html
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+__author__ = 'Spoony'
+__version__  = 'version 0.0.1'
+__license__  = 'Copyright (c) 2015 NXEZ.COM'
+
 class SAKSPins(object):
-    #_inst = None
-    #def __new__(cls, var ):
-    #    if cls._inst is None:
-    #        cls._inst = object.__new__(cls)
-    #        cls._inst.var = var
-    #    return cls._inst
-    #instance = pinstable()
-    #def __new__(cls):
-    #    if cls._inst is None:
-    #        cls._inst = object.__new__(cls)
-    #    return cls._inst
+    '''
+    SAKS Pins Code With BCM for Raspberry Pi Model B.
+    '''
+    '''
+    _inst = None
+    def __new__(cls, var ):
+        if cls._inst is None:
+            cls._inst = object.__new__(cls)
+            cls._inst.var = var
+        return cls._inst
+    instance = pinstable()
+    def __new__(cls):
+        if cls._inst is None:
+            cls._inst = object.__new__(cls)
+        return cls._inst
+    '''
 
     LED_BLUE_1 = 5
     LED_BLUE_2 = 6
