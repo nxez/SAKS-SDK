@@ -75,8 +75,10 @@ if __name__ == "__main__":
     b = SAKS.buzzer
     b.beep(1)
     SAKS.ledrow.set_row([True, False, True, False, True, False, True, False])
-    SAKS.ledrow.items[7].flashAction(0.02,0.02,30)
-    SAKS.ledrow.on()
+    time.sleep(10)
+    SAKS.ledrow.set_row([None, True, False, None, None, None, None, True])
+    #SAKS.ledrow.items[7].flashAction(0.02,0.02,30)
+    #SAKS.ledrow.on()
     print(SAKS.ds18b20.temperature)
     #SAKS.digital_display.show('#.1#.234')
     #print(SAKS.dip_switch.is_on)
@@ -88,7 +90,7 @@ if __name__ == "__main__":
     while True:
         t = get_cpu_temp()
         print("%3.1f" % t)
-        SAKS.digital_display.show("%3.2f" % t)
+        #SAKS.digital_display.show("%3.2f" % t)
         if t > 38:
             b.beepAction(0.02,0.02,30)
         time.sleep(1)
