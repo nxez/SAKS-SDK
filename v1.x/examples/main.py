@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Copyright (c) 2016 NXEZ.COM.
+# Copyright (c) 2015 NXEZ.COM.
 # http://www.nxez.com
 #
 # Licensed under the GNU General Public License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
 
 __author__ = 'Spoony'
 __version__  = 'version 0.0.1'
-__license__  = 'Copyright (c) 2016 NXEZ.COM'
+__license__  = 'Copyright (c) 2015 NXEZ.COM'
 
 from sakshat import SAKSHAT
 import time
@@ -74,46 +74,18 @@ if __name__ == "__main__":
     SAKS.tact_event_handler = tact_event_handler
     b = SAKS.buzzer
     b.beep(1)
-    #SAKS.ledrow.ic.set_data(0x08)
-    SAKS.ledrow.on()
-    time.sleep(3)
-    SAKS.ledrow.off()
-    time.sleep(3)
     SAKS.ledrow.set_row([True, False, True, False, True, False, True, False])
-    time.sleep(2)
+    time.sleep(10)
     SAKS.ledrow.set_row([None, True, False, None, None, None, None, True])
-    print( SAKS.ledrow.row_status)
-    print( SAKS.ledrow.is_on(1))
-    print( SAKS.ledrow.is_on(2))
-
-    print( SAKS.ledrow.is_on(3))
-    print( SAKS.ledrow.is_on(4))
-
     #SAKS.ledrow.items[7].flashAction(0.02,0.02,30)
     #SAKS.ledrow.on()
     print(SAKS.ds18b20.temperature)
     #SAKS.digital_display.show('#.1#.234')
     #print(SAKS.dip_switch.is_on)
-
-    # 将显示“1234”4位数字，并且每一位右下角的小点点亮
-    SAKS.digital_display.show("1.2.3.4.")
-    time.sleep(1)
-    # 将显示“1234”4位数字，并且数字2后面的小点点亮
-    SAKS.digital_display.show("12.34")
-    time.sleep(1)
-    # 在第4位数码管显示“1”，其他3位数码管不显示
-    SAKS.digital_display.show("###1")
-    time.sleep(1)
-    SAKS.digital_display.off()
-    time.sleep(2)
-    SAKS.digital_display.on()
-
     '''
     while True:
         SAKS.digital_display.show("%d%d%d%d" % (time.gmtime().tm_min / 10, time.gmtime().tm_min % 10, time.gmtime().tm_sec / 10, time.gmtime().tm_sec % 10))
         time.sleep(0.5)
-    '''
-
     '''
     while True:
         t = get_cpu_temp()
@@ -122,6 +94,6 @@ if __name__ == "__main__":
         if t > 38:
             b.beepAction(0.02,0.02,30)
         time.sleep(1)
-    '''
 
     input("Enter any keys to exit...")
+

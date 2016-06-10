@@ -189,6 +189,3 @@ class LedRow(object):
                 self.__leds[i].on()
             else:
                 self.__leds[i].off()
-
-
-
