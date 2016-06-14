@@ -10,7 +10,7 @@ https://github.com/spoonysonny/SAKS-SDK
 git clone https://github.com/spoonysonny/SAKS-SDK.git
 
 树莓派瑞士军刀扩展板购买请移步此处:
-http://link.nxez.com/spoony/cps-products-saks-2015-early
+http://link.nxez.com/spoony/cps-products-saks
 
 随后我们将陆续完善开发文档并推出更多教程，敬请关注。同时我们非常期待有兴趣的创客、树莓派学习者深度参与进来，基于此SDK创造自己的作品、完善SDK本身！
 
