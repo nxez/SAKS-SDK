@@ -23,7 +23,7 @@ __license__  = 'Copyright (c) 2016 NXEZ.COM'
 import RPi.GPIO as GPIO
 import time
 import re
-from ic_tm1637 import IC_TM1637 as IC_TM1637
+from .ic_tm1637 import IC_TM1637 as IC_TM1637
 
 class DigitalDisplayTM1637(object):
     '''

@@ -55,7 +55,7 @@ class Tact(object):
             t1 = Thread(target = self.watching)
             t1.setDaemon(True)
         except:
-            print "Error: Unable to start thread by Tact"
+            print("Error: Unable to start thread by Tact")
 
 
     #Stauts.

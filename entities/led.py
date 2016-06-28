@@ -130,7 +130,7 @@ class Led(object):
                 pulse_thread.setDaemon(True)
                 pulse_thread.start()
             except:
-                print 'Error: Unable to start thread by Led'
+                print('Error: Unable to start thread by Led')
         self.__is_pulse = True
         self.__is_on = True
 
