@@ -61,7 +61,7 @@ class DipSwitch2Bit(object):
             t1 = Thread(target = self.watching)
             t1.setDaemon(True)
         except:
-            print "Error: Unable to start thread by DipSwitch"
+            print("Error: Unable to start thread by DipSwitch")
 
     #Stauts.
     @property

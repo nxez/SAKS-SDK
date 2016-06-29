@@ -22,7 +22,7 @@ __license__  = 'Copyright (c) 2016 NXEZ.COM'
 
 import RPi.GPIO as GPIO
 import time
-from ic_74hc595 import IC_74HC595 as IC_74HC595
+from .ic_74hc595 import IC_74HC595 as IC_74HC595
 
 class Led74HC595(object):
     '''

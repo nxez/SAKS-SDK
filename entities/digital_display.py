@@ -49,7 +49,7 @@ class DigitalDisplay(object):
             t1.setDaemon(True)
             t1.start()
         except:
-            print "Error: Unable to start thread by DigitalDisplay"
+            print("Error: Unable to start thread by DigitalDisplay")
 
     #Stauts.
     @property
