@@ -32,7 +32,7 @@ class DigitalDisplayTM1637(object):
 
     __ic_tm1637 = None
     __numbers = []
-    __number_code = [0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f, 0x00]
+    __number_code = [0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f, 0x00, 0x40]
     __address_code = [0xc0, 0xc1, 0xc2, 0xc3]
     __is_on = False
 
@@ -68,7 +68,7 @@ class DigitalDisplayTM1637(object):
         Set the numbers array to show
         :return: void
         '''
-        pattern = re.compile(r'[#|\d]\.?')
+        pattern = re.compile(r'[-|#|\d]\.?')
         matches = pattern.findall(value)
         #del self.__numbers
         self.__numbers = []
@@ -111,7 +111,7 @@ class DigitalDisplayTM1637(object):
         :return: void
         '''
         self.set_numbers(str)
-        print(self.__numbers)
+        #print(self.__numbers)
 
         self.__ic_tm1637.set_command(0x44)
 
@@ -120,6 +120,8 @@ class DigitalDisplayTM1637(object):
             num = self.__numbers[i].replace('.','')
             if num == '#':
                 num = 10
+            elif num == '-':
+                num = 11
             else:
                 num = int(num)
 
