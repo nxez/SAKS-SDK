@@ -17,7 +17,7 @@
 # limitations under the License.
 
 __author__ = 'Spoony'
-__version__  = 'version 0.0.1'
+__version__  = 'version 0.0.2'
 __license__  = 'Copyright (c) 2016 NXEZ.COM'
 
 from sakshat import SAKSHAT

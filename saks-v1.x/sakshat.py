@@ -20,13 +20,11 @@ __author__ = 'Spoony'
 __version__  = 'version 0.0.1'
 __license__  = 'Copyright (c) 2015 NXEZ.COM'
 
-import os
-import sys
 #sys.path.append(sys.path[0] + "/entities/")
 #from entities import *
 import RPi.GPIO as GPIO
-from sakspins import SAKSPins as PINS
-import entities
+from .sakspins import SAKSPins as PINS
+from sakshat import entities
 
 class SAKSHAT(object):
     '''

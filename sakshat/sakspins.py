@@ -16,10 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-__author__ = 'Spoony'
-__version__  = 'version 0.0.1'
-__license__  = 'Copyright (c) 2015 NXEZ.COM'
-
 class SAKSPins(object):
     '''
     SAKS Pins Code With BCM for Raspberry Pi.

@@ -16,12 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-__author__ = 'Spoony'
-__version__  = 'version 0.0.1'
-__license__  = 'Copyright (c) 2016 NXEZ.COM'
-
 import RPi.GPIO as GPIO
-import time
 from .ic_74hc595 import IC_74HC595 as IC_74HC595
 
 class Led74HC595(object):

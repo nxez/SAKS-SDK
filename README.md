@@ -4,16 +4,18 @@
 终于我们完成了这个 SDK 并在此基础上实现了SAKS的SDK，基于Python语言用面向对象的方法实现（由于封装程度高，即便你没有系统学习过面向对象的开发方法也完全不用担心不会使用）。接下来我们会通过既定的一些例程（例如[树莓派 SAKS 扩展板实用应用 之 CPU 温度显示和警报](http://shumeipai.nxez.com/2015/09/21/cpu-temperature-display-and-alarm.html)），介绍如何基于 SAKS SDK 实现例程中的功能。
 
 树莓派瑞士军刀扩展板 SAKS SDK 已经通过 Github 开源（GPL v2.0 许可方式）并提供下载：
-https://github.com/spoonysonny/SAKS-SDK
+[https://github.com/spoonysonny/SAKS-SDK](https://github.com/spoonysonny/SAKS-SDK)
 
-也可通过以下命令下载。
-git clone https://github.com/spoonysonny/SAKS-SDK.git
+也可通过以下命令直接安装。
+`pip install sakshat`
 
 树莓派瑞士军刀扩展板购买请移步此处:
-http://link.nxez.com/spoony/cps-products-saks
+[http://link.nxez.com/spoony/cps-products-saks](http://link.nxez.com/spoony/cps-products-saks)
 
 随后我们将陆续完善开发文档并推出更多教程，敬请关注。同时我们非常期待有兴趣的创客、树莓派学习者深度参与进来，基于此SDK创造自己的作品、完善SDK本身！
 
 树莓派实验室 QQ 群号 62335986
 
 ![](http://shumeipai.nxez.com/wp-content/uploads/2015/03/P1100536-0.jpg)
+
+
