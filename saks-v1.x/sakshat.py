@@ -23,8 +23,8 @@ __license__  = 'Copyright (c) 2015 NXEZ.COM'
 #sys.path.append(sys.path[0] + "/entities/")
 #from entities import *
 import RPi.GPIO as GPIO
-from .sakspins import SAKSPins as PINS
-from sakshat import entities
+from sakspins import SAKSPins as PINS
+import entities
 
 class SAKSHAT(object):
     '''
