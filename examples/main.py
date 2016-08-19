@@ -105,7 +105,7 @@ if __name__ == "__main__":
     SAKS.digital_display.show("###1")
     time.sleep(1)
     SAKS.digital_display.off()
-    time.sleep(2)
+    time.sleep(1)
     SAKS.digital_display.on()
 
     '''

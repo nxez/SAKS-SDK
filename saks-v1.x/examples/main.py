@@ -82,6 +82,7 @@ if __name__ == "__main__":
     print(SAKS.ds18b20.temperature)
     #SAKS.digital_display.show('#.1#.234')
     #print(SAKS.dip_switch.is_on)
+
     '''
     while True:
         SAKS.digital_display.show("%d%d%d%d" % (time.gmtime().tm_min / 10, time.gmtime().tm_min % 10, time.gmtime().tm_sec / 10, time.gmtime().tm_sec % 10))
