@@ -56,6 +56,7 @@ class DipSwitch2Bit(object):
         try:
             t1 = Thread(target = self.watching)
             t1.setDaemon(True)
+            #t1.start()
         except:
             print("Error: Unable to start thread by DipSwitch")
 
